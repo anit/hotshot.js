@@ -1,0 +1,41 @@
+﻿@model ICollection<HotshotJsSample.Domain.Entities.Item>
+@{
+    var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+}
+<div class="widget-collection-grid" data-model-prefix="ItemsPurchased">
+    <div class="edit-message-header">
+        Edit Person
+    </div>
+
+    <div class="add-message-header">
+        Add New Item
+    </div>
+
+    
+    <div class="cgrid-table">
+
+        <div class="table-column" data-info="@serializer.Serialize(new { header = "Name Of Item", fieldName = "Name"})"></div>
+        <div class="table-column" data-info="@serializer.Serialize(new { header = "Quantity", fieldName = "Quantity"})"></div>
+
+    @foreach (var item in Model)
+    {
+        <div class="model-data" data-all="@(serializer.Serialize(item))" data-is-locked="true"></div>
+    }
+    </div>
+
+
+    <div class="model-form">
+        <br />
+        <label>Name</label>
+        <input type="text" name="Name" />
+
+        <br/>
+        <label>Price</label>
+        <input type="text" name="Price" />
+
+        <br />
+        <label>Quantity</label>
+        <input type="text" name="Quantity" />
+
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@model HotshotJsSample.Domain.Entities.Person
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit @Model.Name</h2>
+
+@using(Html.BeginForm("Edit", "Person", FormMethod.Post))
+{
+    <table border="0">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Address</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>@Html.TextBoxFor(model => model.Name)</td>
+                <td>@Html.TextBoxFor(model => model.Address)</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    @Html.Partial("ItemsPurchased", Model.ItemsPurchased)
+
+    <input type="submit" value="Save" />
+}
+
+

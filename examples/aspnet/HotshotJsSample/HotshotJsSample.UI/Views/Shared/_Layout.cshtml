@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <div id="body">
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+
+        <script src="@Url.Content("~/scripts/bootstrap.min.js")"></script>
+        <script src="@Url.Content("~/scripts/widget-collection-grid.js")"></script>
+        <script src="@Url.Content("~/scripts/app.js")"></script>
+    </body>
+</html>

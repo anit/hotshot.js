@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotshotJsSample.Mock", "HotshotJsSample.Mock\HotshotJsSample.Mock.csproj", "{D8CCD1C7-4D53-4C33-B631-E1B4D71560AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotshotJsSample.Domain", "HotshotJsSample.Domain\HotshotJsSample.Domain.csproj", "{8CA91A11-34FE-42A2-AABD-30EB3A3F07C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotshotJsSample.UI", "HotshotJsSample.UI\HotshotJsSample.UI.csproj", "{B728B4EB-B277-4E65-B8F4-DF789866DF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotshotJsSample.Infrastructure.EF", "HotshotJsSample.Infrastructure.EF\HotshotJsSample.Infrastructure.EF.csproj", "{ED3AD7BA-AEE4-446A-9AAF-A0BA7332769F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8CCD1C7-4D53-4C33-B631-E1B4D71560AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CCD1C7-4D53-4C33-B631-E1B4D71560AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CCD1C7-4D53-4C33-B631-E1B4D71560AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CCD1C7-4D53-4C33-B631-E1B4D71560AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA91A11-34FE-42A2-AABD-30EB3A3F07C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA91A11-34FE-42A2-AABD-30EB3A3F07C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA91A11-34FE-42A2-AABD-30EB3A3F07C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA91A11-34FE-42A2-AABD-30EB3A3F07C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B728B4EB-B277-4E65-B8F4-DF789866DF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B728B4EB-B277-4E65-B8F4-DF789866DF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B728B4EB-B277-4E65-B8F4-DF789866DF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B728B4EB-B277-4E65-B8F4-DF789866DF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3AD7BA-AEE4-446A-9AAF-A0BA7332769F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3AD7BA-AEE4-446A-9AAF-A0BA7332769F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3AD7BA-AEE4-446A-9AAF-A0BA7332769F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3AD7BA-AEE4-446A-9AAF-A0BA7332769F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<HotshotJsSample.Domain.Entities.Person>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Create Person", "Create", "Person", null, new { @class = "btn-info"});
+
+
+<h3>People in our database</h3>
+<hr />
+
+@foreach (var person in Model)
+{
+    @Html.ActionLink(person.Name, "Edit", "Person", new { id = person.ID }, null);
+    <hr />   
+}
